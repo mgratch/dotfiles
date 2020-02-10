@@ -37,7 +37,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -53,9 +53,6 @@ brew install gnu-sed
 # Install Bash 4.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
-#brew install bash
-brew tap homebrew/versions
-#brew install bash-completion2
 
 
 # rem specific stuff, and yeah, ponysay is important.
@@ -88,7 +85,7 @@ brew install entr
 brew install wget
 
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
+brew install vim
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -97,7 +94,7 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # quickview stuff
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
 
 # Install other useful binaries.
 brew install ack
