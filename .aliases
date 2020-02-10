@@ -10,26 +10,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"
 
-alias clone='nocorrect clone '
-alias cordova='nocorrect cordova '
-
 # git
 alias gs="git status -s"
-alias gp="git push origin HEAD"
-alias gpt="git push origin HEAD && git push --tags"
-alias wip="git commit -m'WIP' . && git push origin HEAD"
-
-alias m="memcached -d -m 24 -p 11211"
-
-# pebble
-alias pebble-both="pebble build ; pebble install --emulator basalt; pebble install --emulator aplite"
-
-alias dockit=". '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
-
-alias hosts='sudo vi /etc/hosts'
-
-# flush Directory Service cache
-alias flush="dscacheutil -flushcache"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -64,10 +46,6 @@ function ls() {
 #                  sudo easy_install Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-# GIT STUFF
-
-# Undo a `git push`
-alias undopush="git push -f origin HEAD^:master"
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
@@ -122,19 +100,11 @@ alias hidden='ls -trFa | grep "^\."'
 # reload the shell
 alias reload='exec $SHELL -l'
 
-# snyk helpers (pipe-to command)
-alias snyk-post='gzip | curl -s -X POST https://snyk.io/api/vuln/npm -H "content-type: application/json" -H "content-encoding: gzip" --data-binary @-'
-
 alias pip=pip3
 
 # shows the top 5 processes by cpu usage
 alias top5="ps auxww | sort -rnk 3,3 | head -n 5 | awk '{ print \$3\" (\" \$2 \") \" \$11 }'"
 alias killtop="ps auxww | sort -rnk 3,3 | head -n 1 | awk '{ print \$2 }' | xargs kill -9"
-
-# data science helpers
-alias csv-header="csvcut -n"
-
-alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 
 alias help="tldr"
 alias ping='prettyping --nolegend'
@@ -145,7 +115,7 @@ alias nnn='nnn -S'
 
 alias perf='curl --compress -w "@$HOME/.curl-format.txt" -o /dev/null -s '
 
-alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 

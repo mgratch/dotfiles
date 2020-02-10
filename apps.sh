@@ -77,7 +77,6 @@ brew install jq
 brew install ack
 brew install the_silver_searcher
 brew install moreutils
-sudo pip install csvkit # not really brew, but … meh
 brew install noti
 brew install entr
 
@@ -90,39 +89,12 @@ brew install wget --with-iri
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
-
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install hashpump
-brew install hydra
-brew install john
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
 
 # quickview stuff
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package

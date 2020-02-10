@@ -105,7 +105,7 @@
 	precomposeunicode = false
 
 	# don't blow up when I make a tiny typo in vim
-	editor = vim
+	editor = nano
 
 [pager]
 

@@ -37,7 +37,7 @@ function! UserInit()
 
 endfunction
 
-" Put your costom configurations here, e.g., change the colorscheme.
+" Put your custom configurations here, e.g., change the colorscheme.
 function! UserConfig()
 
     if (has("termguicolors"))
