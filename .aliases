@@ -38,7 +38,7 @@ else
 fi
 
 function ls() {
-  command ls -Gl "$@" | node /Users/remy/Sites/nice-ls index.js
+  command ls -Gl "$@" | node /Users/marcgratch/Sites/nice-ls index.js
 }
 
 

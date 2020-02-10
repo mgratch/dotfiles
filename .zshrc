@@ -66,7 +66,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
-export NVM_DIR="/Users/remy/.nvm"
+export NVM_DIR="/Users/marcgratch/.nvm"
 # nvm is loaded in .zshenv
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
