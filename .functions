@@ -3,12 +3,7 @@ function single() {
   while read line; do echo -e "\033[1000D\033[K\033[32m$$\033[0m $line" | tr -d '\r\n'; done
 }
 
-function zeit() {
-  now alias ls | grep $1 | awk '{ gsub(/.now.sh$/,"",$1); gsub(/-/, "/", $1); print "https://zeit.co/rem/"$1"/logs?all=1" }' | xargs open
-}
-
 function sha256sum() { openssl sha256 "$@" | awk '{print $2}'; }
-
 
 # Create a new directory and enter it
 function mkd() {

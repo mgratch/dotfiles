@@ -62,7 +62,7 @@ source $ZSH/oh-my-zsh.sh
 # welcome!
 hash ponysay &>/dev/null && ponysay -o
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
