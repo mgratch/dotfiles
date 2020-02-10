@@ -1,4 +1,4 @@
-# Remy's (mac) dotfiles
+# Marc's (mac) dotfiles
 
 ![Screenshot of my shell prompt](https://cldup.com/Q4Z5Vek_XD.png)
 
@@ -17,7 +17,7 @@ I'm also using these on a Mac (and have tried with varying degrees of success on
 You can clone the repository wherever you want. (I keep mine in `~/dotfiles`). The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/remy/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/mgratch/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -37,7 +37,7 @@ set -- -f; source bootstrap.sh
 To install these dotfiles without Git:
 
 ```bash
-cd; curl -#L https://github.com/remy/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE}
+cd; curl -#L https://github.com/mgratch/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE}
 ```
 
 To update later on, just run that command again.
@@ -57,16 +57,16 @@ My `~/.extra` looks something like this:
 ```bash
 # Git credentials
 # Not in the repository, to prevent people from accidentally committing under my name
-GIT_AUTHOR_NAME="Remy Sharp"
-GIT_AUTHOR_EMAIL="remy@remysharp.com"
-git config --global github.user "remy"
+GIT_AUTHOR_NAME="Marc Gratch"
+GIT_AUTHOR_EMAIL="me@marcgratch.com"
+git config --global github.user "mgratch"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
-You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/remy/dotfiles/fork) instead, though.
+You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mgratch/dotfiles/fork) instead, though.
 
 ### Sensible OS X defaults
 
@@ -93,16 +93,17 @@ I've also included my default global npm packages, which is installed via
 ## Feedback
 
 Suggestions/improvements
-[welcome](https://github.com/remy/dotfiles/issues)!
+[welcome](https://github.com/mgratch/dotfiles/issues)!
 
 ## Author
 
-- [Remy Sharp](https://remysharp.com/)
+- [Marc Gratch](https://marcgratch.com/)
 
 Large amounts taken directly from [Mathias Bynens](https://mathiasbynens.be/)' [dotfiles repo](https://github.com/mathiasbynens/dotfiles) ❤
 
 ## Thanks to...
 
+* [Remy Sharp](https://remysharp.com/)
 * @ptb and [his _OS X Lion Setup_ repository](https://github.com/ptb/Mac-OS-X-Lion-Setup)
 * [Ben Alman](http://benalman.com/) and his [dotfiles repository](https://github.com/cowboy/dotfiles)
 * [Chris Gerke](http://www.randomsquared.com/) and his [tutorial on creating an OS X SOE master image](http://chris-gerke.blogspot.com/2012/04/mac-osx-soe-master-image-day-7.html) + [_Insta_ repository](https://github.com/cgerke/Insta)
